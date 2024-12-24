@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get-Your Daily Quote</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="quote-box">
+        <h2>Quote of the day</h2>
+        <blockquote id="quote">Here is the Quote...</blockquote>
+        <span id="author">Author Name</span>
+        <div>
+            <button onclick="getQuote(api_url)">New Quote</button>
+            <button> <img onclick="shareOnX()" id="icon" src="./send.png" alt="">-Tweet</button>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
