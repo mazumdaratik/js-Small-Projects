@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #d0eaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+.gallery{
+    flex-basis: 47%;
+    position: relative;
+    background: #ded4d7;
+    transform: scale(1.02);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.gallery img{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+.details{
+    flex-basis: 53%;
+    background: #eeecec;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 500;
+    color: #777;
+}
+.details h1{
+    color: #333;
+    font-size: 30px;
+    font-weight: 600;
+}
+.details h2{
+    color: #d08c8c;
+    font-size: 30px;
+    font-weight: 600;
+}
+.details h3{
+    color: #498167;
+    margin-bottom: 20px;
+}
+.details form{
+    font-size: 15px;
+    font-weight: 400px;
+}
+.size-select{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.size-select p{
+    width: 70px;
+}
+.size-select input:checked + span{
+    color: rgb(158, 93, 78);
+    font-weight: 600;
+}
+.size-select input{
+    display: none;
+}
+.size-select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.color-select p{
+    width: 75px;
+}
+.color-select span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.color-1{
+    background: red;
+}
+.color-2{
+    background: #00d874;
+}
+.color-3{
+    background: blue;
+}
+.color-4{
+    background: rgb(255, 0, 225);
+}
+.color-select input{
+    display: none;
+}
+.color-select input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0, 0, 0, 4px #fff, 0 0 0 6px #000;
+}
+.quantity-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.quantity-select p{
+    width: 75px;
+}
+.quantity-select input{
+    background: #ebd5d5;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px;
+}
+form button{
+    background: #8f8ca3;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(240, 63, 63, 0.25);
+    cursor: pointer;
+}
+.controls{
+    position:absolute;
+    bottom: 40px;
+    right: 20px;
+}
+.btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 7px;
+    border-radius: 50%;
+    background: rgba(82, 36, 36, 0.5);
+    cursor: pointer;
+    
+}
+.btn.active{
+background: #b23131;
+}
