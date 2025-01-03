@@ -6,6 +6,10 @@ body{
     background-color: #548687;
     text-align: center;
 }
+h1{
+    margin-top: 20px;
+    color: #ffffc7;
+}
 .container{
     height: 70vh;
     display: flex;
@@ -40,4 +44,32 @@ body{
     outline: none;
     color: #548687;
     font-weight: 600;
+}
+.results {
+    margin-top: 5px;
+    font-size: 30px;
+    color: #ffffc7;
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+#new-btn{
+    width: 16vmin;
+    height: 6vmin;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    color: #548687;
+    font-weight: 600;
+    position: absolute; 
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hide{
+    display: none;
 }
